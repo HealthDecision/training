@@ -1,4 +1,6 @@
-# Definition of Breach
+# Breaches
+
+## Definition of a Breach
 
 A breach is defined as unauthorized exposure of ePHI or disclosure that’s not authorized or allowed under the HIPAA Privacy Rule. The breach rules were amended in 2013 as part of the HITECH Act.
 

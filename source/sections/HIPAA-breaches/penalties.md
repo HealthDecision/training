@@ -1,6 +1,7 @@
-# Penalties
+## Penalties
 
 If the OCR finds an organization to be in violation, the following actions may take place:
+
 - Voluntary compliance;
 - Corrective action; and/or
 - Resolution agreement.

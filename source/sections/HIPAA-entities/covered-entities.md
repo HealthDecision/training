@@ -1,4 +1,4 @@
-# Covered Entities
+## Covered Entities
 
 What is a "covered entity" under HIPAA?
 

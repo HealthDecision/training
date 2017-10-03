@@ -1,15 +1,15 @@
 <header class="main-header">
 	<div class="grid">
-		<div class="logo"><img src="/assets/img/logo.svg" alt="Datica Logo"></div>
+		<div class="logo"><img src="/assets/img/logo.svg" alt="<%= company[:name] %> Logo"></div>
 		<nav>
-			<a href="//datica.com">Datica Home</a>
-			<a href="//datica.com/about-us">About</a>
+			<a href="<%= company[:website] %>"><%= company[:name] %> Home</a>
+			<a href="<%= company[:about_url] %>">About</a>
 		</nav>
 	</div>
 </header>
 <header class="sub-header">
 	<div class="grid">
-		<h1 class="site-title">Datica Compliance</h1>
+		<h1 class="site-title"><%= company[:name] %> Compliance</h1>
 		<a class="up-next" href="/#/">&gt; HIPAA Training</a>
 		<% if current_page.data.search %>
 		<div class="search">

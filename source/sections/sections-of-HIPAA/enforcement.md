@@ -7,6 +7,7 @@ HHS sets the rules for HIPAA and enforcement is carried out by The Office of Civ
 In a recent report by the OCR, the Security Rule accounted for the majority, or 60%, of violations, followed by Privacy Rule violations and then Breach Notification violations. That recent report also cited a lack of complete or accurate risk assessments as a widespread problem, with up to two third’s of entities lacking full and timely risk assessments. Risk assessments are incredibly valuable and should inform much of your security and privacy posture as an organization.
 
 If the OCR finds an organization to be in violation, the following actions may take place:
+
 - Voluntary compliance;
 - Corrective action; and/or
 - Resolution agreement.
