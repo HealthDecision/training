@@ -4,6 +4,12 @@ task :build do
   puts status ? "OK" : "FAILED"
 end
 
+desc "Build static site to build directory using URLs schemes that will work if browsing directly from file system."
+task :build_for_filesystem_hosting do
+  status = system("BUILD_FOR_FILESYSTEM=true middleman build --clean")
+  puts status ? "OK" : "FAILED"
+end
+
 desc "Run the middleman server"
 task :run do
   system("middleman server -p 2113")

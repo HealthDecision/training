@@ -35,11 +35,21 @@ set :images_dir, 'assets/img'
 
 activate :directory_indexes
 
+# Empty string makes the browser default to whatever protocol is being used (http/https).
+set :cdn_root_protocol, ''
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
   activate :directory_indexes
+
+  if ENV["BUILD_FOR_FILESYSTEM"] == "true"
+    # For builds that we will be opened from the file system (file:// protocol) we have to
+    # for http for included CDN resources.
+    set :cdn_root_protocol, "http:"
+    activate :asset_host, :host => "./"
+  end
 end
 
 set :markdown_engine, :redcarpet
@@ -50,3 +60,9 @@ activate :syntax, :wrap => true
 activate :search_engine_sitemap
 
 page '/sitemap.xml', :layout => false
+
+helpers do
+  def some_helper
+    "Helping"
+  end
+end
